@@ -1,0 +1,20 @@
+services:
+  habittracker-backend:
+    build:
+      context: ..
+      dockerfile: Docker/Dockerfile
+    restart: always
+    environment:
+      - ConnectionStrings__DefaultConnection=Host=db;Port=5432;Database=HabitTracker;Username=postgres;Password=jG1cv1L81%8Y
+      - ASPNETCORE_URLS=http://+:7255
+      - Authentication__SecretKey=d2s3kjhds1lkg4khlfh2sdfk4sf7df3jsd2klfhsd3kfh==
+      - Authentication__Audience=AnyOneAppAudience
+      - Authentication__Issuer=AnyOneAppIssuer
+      - TZ=Europe/Vienna
+    ports:
+      - 7255:7255
+    networks:
+      - docker_shared-network
+networks:
+  docker_shared-network:
+    external: true

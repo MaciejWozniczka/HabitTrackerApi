@@ -1,0 +1,29 @@
+// Global using directives
+
+global using System.ComponentModel.DataAnnotations;
+global using System.Globalization;
+global using System.IdentityModel.Tokens.Jwt;
+global using System.Reflection;
+global using System.Security.Claims;
+global using System.Text;
+global using System.Text.Json.Serialization;
+global using FluentValidation;
+global using Flurl.Http;
+global using HabitTrackerApi;
+global using HabitTrackerApi.Data;
+global using HabitTrackerApi.Extensions;
+global using HabitTrackerApi.Garmins;
+global using HabitTrackerApi.Habits;
+global using HabitTrackerApi.Users;
+global using MediatR;
+global using Microsoft.AspNetCore.Authentication.JwtBearer;
+global using Microsoft.AspNetCore.Authorization;
+global using Microsoft.AspNetCore.Identity;
+global using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
+global using Microsoft.AspNetCore.Mvc;
+global using Microsoft.EntityFrameworkCore;
+global using Microsoft.Extensions.Options;
+global using Microsoft.IdentityModel.Logging;
+global using Microsoft.IdentityModel.Tokens;
+global using Microsoft.OpenApi.Models;
+global using Swashbuckle.AspNetCore.Annotations;
