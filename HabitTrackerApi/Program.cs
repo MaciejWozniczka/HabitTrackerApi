@@ -54,7 +54,6 @@ services.AddValidatorsFromAssembly(typeof(Program).Assembly);
 
 services.AddScoped<ICurrentUserAccessor, CurrentUserAccessor>();
 
-services.AddScoped<IGarminService, GarminService>();
 services.AddScoped<IHabitService, HabitService>();
 services.AddScoped<IUserService, UserService>();
 
